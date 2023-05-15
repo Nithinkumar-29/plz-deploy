@@ -2,16 +2,7 @@ from PIL import Image
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-page_bg_img = '''
-<style>
-body {
-background-image: url("Back.jpg");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
-#st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 col1,col2,col3 = st.columns([1,4,1])
 with col2:
 	st.title("Early onset detection of Alzheimer's Disease")
